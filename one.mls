@@ -80,7 +80,6 @@ C_THISCLASS::C_THISCLASS() // set up default configuration
   outSlide=0;
   oldInSlide=0;
   oldOutSlide=0;
-  enabled = 1;
   arbLastTC = GetTickCount();
   arbitrary=1;
   arbVal = 500;

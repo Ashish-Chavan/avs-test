@@ -137,11 +137,7 @@ int C_THISCLASS::render(char visdata[2][2][576], int isBeat, int *framebuffer, i
   if (!enabled) return 0;
   if (isBeat&0x80000000) return 0;
 
-	if (isBeat) // Show the beat received from AVS
-		{
-		SliderStep(IDC_IN, &inSlide);
-		count++;
-		}
+	
 
 	if (skipfirst != 0 && count <= skipfirst)
 			return isBeat ? CLR_BEAT : 0;
